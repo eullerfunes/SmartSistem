@@ -16,3 +16,7 @@ menu.addEventListener("click", ()=>{
 overlay.addEventListener("click", ()=>{
     menu.classList.remove('abrir-menu')
 })
+
+window.sr = ScrollReveal({ reset: true});
+
+sr.reveal('.menu-desktop, .EF-contato, .titulo, .img-topo-site, .btn-abrir-menu, .menu-mobile, .txt-topo-site, .especialidades, .interface, .titulo, .flex, .especialidades-box, .sobre, .portfolio, .formulario, .interface', {duration:1000});
