@@ -12,7 +12,7 @@
     }
     
     body{
-        background-color: #06051dcc;
+        background-color: #000000;
         height: 100vh;
     
     }
@@ -76,7 +76,7 @@
         transition: .2s;
     }
     header nav.menu-desktop a:hover{
-        color: rgb(0, 146, 243);
+        color: #37e1ff;
         transform: scale(1.05);
     }
     header nav ul{
