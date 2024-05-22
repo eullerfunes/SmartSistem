@@ -70,13 +70,13 @@
     }
     
     header a{
-        color: rgb(95, 95, 95);
+        color: #aa511d;
         text-decoration: none;
         display: inline-block;
         transition: .2s;
     }
     header nav.menu-desktop a:hover{
-        color: aliceblue;
+        color: rgb(0, 146, 243);
         transform: scale(1.05);
     }
     header nav ul{
