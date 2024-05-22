@@ -512,7 +512,7 @@
         }
     }
     
-.menu-desktop, .EF-contato, .img-topo-site{
+.menu-desktop, .EF-contato, .titulo, .img-topo-site, .btn-abrir-menu, .menu-mobile, .txt-topo-site, .especialidades, .interface, .titulo, .flex, .especialidades-box, .sobre, .portfolio, .formulario, .interface {
     visibility:hidden;
 }
 
