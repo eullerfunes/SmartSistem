@@ -1,11 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--fim google fontes-->
+ <!--BOOTSTRAO ICONS-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!--FIM BOOTSTRAO ICONS-->
+
+    <title>Smart Sistem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
-    <h1>Exemplo padrão</h1>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="Logo.png" alt="Logo da Agência EF">
+                </a>
+
+            </div><!--Logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#especi">Especialidades</a></li>
+                    <li><a href="#sobr">Sobre</a></li>
+                    <li><a href="#port">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="EF-contato">
+                <a href="https://wa.me/5519996171190">
+                    <button>Contato</button>
+                </a>
+            </div><!--EF contato-->
+                <!--MENU MOBILE--> 
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list-task"></i>
+            </div><!-- btn-abrir-menu -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#especi">Especialidades</a></li>
+                        <li><a href="#sobr">Sobre</a></li>
+                        <li><a href="#port">Projetos</a></li>
+                        <li><a href="https://wa.me/5519996171190">Whatsapp</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id ="overlay-menu"></div>
+            
+        </div><!--interface-->
+    </header>
+    <main>
+        <section class="topo-do-site" id="home">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
+                        <p>Desbloqueando o potencial digital para criar soluções que transformam desafios em oportunidades, um algoritmo de cada vez.</p>
+
+                        <div class="EF-contato">
+                            <a href="#">
+                                <button id="whatsappButton">Entre em contato</button>
+                                <script>
+                                    document.getElementById("whatsappButton").addEventListener("click", function() {
+                                        window.location.href = "whatsapp://send?phone=+5519996171190";
+                                    });
+                                </script>
+                            </a>
+
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="perfil.jpg" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topoDoSite-->
+
+        <section class="especialidades" id="especi">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box"> 
+                        <i class="bi bi-code-square"></i>
+                        <h3>Projetos</h3>
+                        <p>Eletrônica, sistemas embarcados, web e JavaScript, criando soluções eficientes para diversos setores e experiências digitais excepcionais.</p>
+                    </div><!--especialidades box-->
+                    <div class="especialidades-box"> 
+                        <i class="bi bi-linkedin"></i>
+                        <h3>Linkedin</h3>
+                        <p>Descubra minha carreira, conquistas e paixões no LinkedIn. Sua próxima inspiração profissional pode estar apenas a um clique de distância.</p>
+                    </div><!--linkedin-->
+                    <div class="especialidades-box"> 
+                        <i class="bi bi-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Explore meu GitHub para mergulhar na minha jornada de desenvolvimento de software. Código, projetos e inovações esperam por você!</p>
+                    </div><!--especialidades box-->
+                </div><!--felx-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre" id="sobr">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="apresentação.jpg" alt="">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>EU SOU EULLER FUNES.</span></h2>
+                        <p>Sou um profissional com 6 anos de sólida experiência em gestão de manutenção e produção na indústria. Além disso, possuo 2 anos de experiência em tecnologia, destacando-se em Python e JavaScript. </p>
+                        <p> Com uma paixão por inovação, combino minha experiência em gestão industrial e habilidade em tecnologia para criar soluções eficientes e impulsionar o sucesso dos projetos. Estou disponível para contribuir em desafios que exijam uma abordagem integrada de gestão e tecnologia.</p>
+                    <div class="btn-social">
+                        <a href="https://instagram.com/eullerfunes?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.facebook.com/eullerfunes?mibextid=LQQJ4d"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="https://www.linkedin.com/in/eullerfunes?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="github.com/eullerfunes/eullerfunes?fbclid=PAAaa45i7H8zQ0KDkf25Ov447RpluuOepKFDBhw3AeDaYQYrbPRWCJvMNkdL4_aem_ATrxuyDPqOCKLeeAdwIl6EOQ52UV3ro5AZmUtz5wLbLT26sfDMKyZZEXZ975cKTVUVA"><button><i class="bi bi-github"></i></button></a>
+                    </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+        <section class="portfolio" id="port">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                        <div class="img-port" style="background-image: url(projetos.png);">
+                        <div class="overlay">Tecnologia</div>
+                        </div>
+                        <div class="img-port" style="background-image: url(gestão.png);">
+                            <div class="overlay">Gestão</div>
+                        </div>
+                        <div class="img-port" style="background-image: url(automação.png);">
+                            <div class="overlay">Automação</div>
+                        </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+        
+         <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Digite seu nome:" required>
+                    <input type="text" name="" id="" placeholder="Digite seu email:" required>
+                    <input type="text" name="" id="" placeholder="Digite seu celular:">
+                    <textarea name="" id="" placeholder="Digite sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface -->
+        </section><!--formulario-->
+        <section class="formulario">
+
+        </section><!--formulario-->
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer borda">
+                <div class="flex">
+                    <div class="logo-footer">
+                        
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://instagram.com/eullerfunes?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.facebook.com/eullerfunes?mibextid=LQQJ4d"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="https://www.linkedin.com/in/eullerfunes?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/eullerfunes/eullerfunes?fbclid=PAAaa45i7H8zQ0KDkf25Ov447RpluuOepKFDBhw3AeDaYQYrbPRWCJvMNkdL4_aem_ATrxuyDPqOCKLeeAdwIl6EOQ52UV3ro5AZmUtz5wLbLT26sfDMKyZZEXZ975cKTVUVA"></i></button></a>
+                    </div><!--EF-social-->
+               
+            </div><!--line-footer-->
+            <div class="line-footer">
+                <p><i class="bi bi-envelope-fill"><a href="mailto:euller_funes@hotmail.com"> euller_funes@hotmail.com</a></i></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
 </body>
 </html>
