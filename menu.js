@@ -19,4 +19,9 @@ overlay.addEventListener("click", ()=>{
 
 window.sr = ScrollReveal({ reset: true});
 
-sr.reveal('.menu-desktop, .EF-contato, .titulo, .img-topo-site, .btn-abrir-menu, .menu-mobile, .txt-topo-site, .especialidades, .interface, .titulo, .flex, .especialidades-box, .sobre, .portfolio, .formulario, .interface', {duration:1000});
+sr.reveal('.menu-desktop, .EF-contato, .img-topo-site, .btn-abrir-menu, .menu-mobile, .txt-topo-site, .especialidades, .titulo, .flex, .especialidades-box, .sobre, .portfolio, .formulario', {duration:1000});
+
+sr.reveal('.interface, .titulo,',{
+    rotate: { x:0, y:80, z:0},
+    duration:2000
+})
